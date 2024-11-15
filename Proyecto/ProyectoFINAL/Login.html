@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio Sesión | VIDOZ</title>
+    <link rel="stylesheet" href="Css_Pagina_Principal/Style-login-registro-verificación.css">
+    <link rel="stylesheet" href="Css_Pagina_Principal/Style-Login-Registro-Verificacion-Style-MediaQueri.css">
+    <link rel="icon" href="Assets/Svg/Logo/Vidoz_Logo.svg" type="image/x-icon">
+</head>
+<body>
+    <section class="Contenedor-Total">
+        <div class="Contenedor-Caracteristicas-Registro">
+            <a href="Index.html"><img class="Logo" src="Assets/Svg/Logo/Vidoz_Logo.svg" width="60px"></a>
+        </div>
+        <form class="Contenedor-Registro" id="loginForm">
+            <h1>Iniciar Sesión</h1>
+            <label>
+                <p>E-mail</p>
+                <input type="text" placeholder="Correo Electrónico"  class="Input-CorreoElectronico" id="loginEmail" name="Correo_Electronico" required>
+            </label>
+            <label>
+                <p>Contraseña</p>
+                    <input type="password" id="loginPassword" placeholder="Contraseña" class="Input-Contraseña" name="Contraseña" required>
+                    <span class="toggle-password" data-target="loginPassword"></span>
+            </label>
+            <label class="Recuperar">
+                <input type="submit" value="Iniciar Sesión" class="Input-Registrarse" name="Boton_IniciarSesion">
+                <p class="recuerdame">
+                    <input type="checkbox"> Recuerdame
+                </p>
+                <p class="olvidar">
+                    <span><a href="Registro.html">¿Olvidaste tu contraseña?</a></span>
+                </p>
+            </label>
+            <div class="Contenedor-Atajos">
+                <a href="#"><img src="Assets/Svg/Iconos/Icono_Registro_Facebook.svg" width="30px"></a>
+                <a href="#"><img src="Assets/Svg/Iconos/Icono_Registro_Google.svg" width="30px"></a>
+                <a href="#"><img src="Assets/Svg/Iconos/Icono_Caracteristicas_Phone.svg" width="30px"></a>
+            </div>
+            <div class="Atajo-a">
+                <p>¿No tienes cuenta? <span><a href="Registro.html">Regístrate</a></span></p>
+            </div>
+        </form>
+    </section>
+
+    <script src="./Js/Login-Register.js"></script>
+</body>
+</html>

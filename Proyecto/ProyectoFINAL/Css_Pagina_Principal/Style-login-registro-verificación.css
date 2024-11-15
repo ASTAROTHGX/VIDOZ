@@ -1,0 +1,293 @@
+/* Estilos Globales */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+html, body {
+    overflow: hidden;
+    height: 100%;
+}
+
+html {
+    font-size: 62.5%; /* Tamaño base de la fuente para facilitar cálculos con rem */
+}
+
+h1 {
+    font-size: 3.5rem; /* Tamaño de fuente para elementos h1 */
+}
+
+p {
+    font-size: 1.2rem; /* Tamaño de fuente para párrafos */
+}
+
+section{
+    display: flex;
+}
+
+
+.Contenedor-Caracteristicas-Registro{
+    width: 64%;
+    height: 100vh;
+    background-color: #4164E3;
+    background-image: url(../Assets/Svg/Elementos_Graficos/Fondo_Principal_2.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+
+.Contenedor-Caracteristicas-Registro-Texto{
+    color: white;
+    text-align: center;
+    width: 50rem;
+    justify-content: center;
+    align-items: center;
+    margin: 50rem 25rem;
+}
+
+.Contenedor-Caracteristicas-Registro-Texto h2{
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+.Contenedor-Caracteristicas-Registro-Texto p{
+    font-size: 1.4rem;
+}
+
+.olvidar{
+    text-align: right;
+}
+
+.recuerdame{
+    margin-top: .5rem;
+}
+
+.Contenedor-Registro{
+    width: 40%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.Contenedor-Registro h1{
+    color: #4164E3;
+}
+
+.Input-CorreoElectronico, .Input-Contraseña, .Input-Repetir-Contraseña, .Input-Registrarse{
+    width: 40rem;
+    height: 5.4rem;
+    border: 1px solid #888888;
+    border-radius: 0.5rem;
+    padding: .5rem;
+    margin: .7rem 0rem;
+}
+
+.Input-Registrarse{
+    color: white;
+    border: 1px solid transparent;
+    background-color: #4164E3;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.Input-Aceptar{
+    border: 1px solid transparent;
+    background-color: #4164E3;
+    font-size: 1.5rem;
+    width: 10rem;
+    height: 5rem;
+    color: white;
+    border-radius: 0.7rem;
+    cursor: pointer;
+}
+
+.Contenedor-Opciones input{
+    margin: 1rem 0.7rem;
+}
+
+.Contenedor-Registro p{
+    color: #888888;
+    width: 40rem;
+}
+
+.Input-Cancelar{
+    border: 1px solid #888888;
+    background-color: white;
+    font-size: 1.5rem;
+    width: 10rem;
+    height: 5rem;
+    color: black;
+    border-radius: 0.7rem;
+    cursor: pointer;
+}
+
+
+input:focus {
+    opacity: 0.9;
+    border: 2px solid blue;
+}
+
+
+.Contenedor-Registro-Numeros input{
+    text-align: center;
+    font-size: 3rem;
+}
+
+.Contenedor-Atajos{
+    display: flex;
+}
+
+.Contenedor-Atajos img{
+    margin: 0 0.3rem;
+}
+
+a{
+    color: #4164E3;
+}
+
+.Logo{
+    margin: 2rem 4rem;
+}
+
+
+.Contenedor-Registro-Numeros{
+    display: flex;
+}
+
+.Contenedor-Registro-Numeros input{
+    width: 5.5rem;
+    height: 5.5rem;
+    border-radius: 1rem;
+    border: 1px solid #888888;
+    margin: 0 1rem;
+}
+
+.Contenedor-Registro-Texto2{
+    text-align: center;
+}
+
+.Contenedor-Registro-Texto2 h1{
+    margin-bottom: 1rem;
+}
+
+.Atajo-a{
+    text-align: center;
+}
+
+.Contenedor-Caracteristicas-Registro-Textoo{   
+    color: white;
+    text-align: center;
+    margin-top: 35rem;
+}
+
+.password-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.password-container .toggle-password {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    width: 16px; /* Ajusta el tamaño del ícono */
+    height: 16px; /* Ajusta el tamaño del ícono */
+}
+
+
+
+@media (max-width: 1150px) {
+    .Contenedor-Registro{
+        width: 40%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+        margin-left: 2.25rem;
+    }
+
+    .Contenedor-Caracteristicas-Registro{
+        width: 60%;
+        height: 100vh;
+        background-color: #4164E3;
+        background-repeat: no-repeat;
+    }
+
+
+    .Input-CorreoElectronico, .Input-Contraseña, .Input-Repetir-Contraseña, .Input-Registrarse{
+        width: 35rem;
+        height: 5.4rem;
+        border: 1px solid #888888;
+        border-radius: 0.5rem;
+        padding: .5rem;
+        margin: .7rem 0rem;
+    }
+
+    .password-container .toggle-password {
+        position: absolute;
+        right: 65px;
+        cursor: pointer;
+        width: 16px; /* Ajusta el tamaño del ícono */
+        height: 16px; /* Ajusta el tamaño del ícono */
+    }
+
+    .olvidar{
+        right: 20rem;
+    }
+}
+
+@media (max-width: 940px) {
+    .Contenedor-Registro{
+        width: 40%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+        margin-left: 2.25rem;
+    }
+
+    .password-container input[type="password"] {
+        width: 90%;
+    }
+
+    .Contenedor-Caracteristicas-Registro{
+        width: 60%;
+        height: 100vh;
+        background-color: #4164E3;
+        background-repeat: no-repeat;
+    }
+
+    .Input-CorreoElectronico, .Input-Contraseña, .Input-Repetir-Contraseña, .Input-Registrarse{
+        width: 35rem;
+        height: 5.4rem;
+        border: 1px solid #888888;
+        border-radius: 0.5rem;
+        padding: .5rem;
+        margin: .7rem 0rem;
+    }
+
+    .olvidar span{
+        margin-right: 5rem;
+    }
+
+    .password-container{
+        width: 180%;
+    }
+
+    .password-container .toggle-password {
+        position: absolute;
+        right:  0px;
+        cursor: pointer;
+        width: 16px; /* Ajusta el tamaño del ícono */
+        height: 16px; /* Ajusta el tamaño del ícono */
+    }
+}

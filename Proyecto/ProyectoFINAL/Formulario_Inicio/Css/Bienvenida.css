@@ -1,0 +1,63 @@
+/* Estilo general */
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Evita scroll de la página */
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    background-color: #11121a;
+}
+
+/* Estilos del video */
+.Bienvenida_Video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Hace que el video quede detrás del botón */
+}
+
+/* Estilos del enlace "Comenzar" */
+.comenzar-btn {
+    position: relative;
+    padding: 10px 30px;
+    font-size: 1.5rem;
+    color: #5e63ff;
+    background-color: transparent;
+    border: 2px solid #5e63ff;
+    border-radius: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color .8s ease;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    /* Oculto inicialmente y con animación de aparición */
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+    animation-delay: 1.2s; /* Retardo de 2 segundos */
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1; /* Hace visible el enlace */
+    }
+}
+
+.comenzar-btn:hover {
+    background-color: #5e63ff;
+    color: white;
+}
+
+@media (max-width: 1250px) {
+    .comenzar-btn {
+        padding: 4px 10px;
+        font-size: 1rem; /* Ajuste del tamaño de fuente */
+        margin-top: 40px;
+    }
+}

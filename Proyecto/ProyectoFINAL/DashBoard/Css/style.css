@@ -1,0 +1,1504 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+  --base-clr: #11121a;
+  --line-clr: #42434a;
+  --hover-clr: #222533;
+  --text-clr: #e6e6ef;
+  --accent-clr: #5e63ff;
+  --secondary-text-clr: #b0b3c1;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+
+}
+
+*::-webkit-scrollbar {
+  display: none; /* Oculta la barra de desplazamiento */
+}
+html{
+  font-family: Poppins, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5rem;
+}
+
+body{
+  min-height: 100vh;
+  min-height: 100dvh;
+  background-color: var(--base-clr);
+  color: var(--text-clr);
+  display: grid;
+  grid-template-columns: auto 2fr;
+  display: flex;
+  overflow-y: hidden;
+}
+
+main{
+  width: 80%;
+  display: flex;
+}
+#sidebar{
+  box-sizing: border-box;
+  height: 100vh;
+  width: 250px;
+  padding: 5px 1em;
+  background-color: var(--base-clr);
+  border-right: 1px solid var(--line-clr);
+  position: sticky;
+  top: 0;
+  align-self: start;
+  transition: 300ms ease-in-out;
+  overflow: hidden;
+  text-wrap: nowrap;
+}
+#sidebar.close{
+  padding: 0;
+  margin-left: -.3em;
+  width: 60px;
+}
+#sidebar ul{
+  list-style: none;
+}
+#sidebar > ul > li:first-child{
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 16px;
+  .logo{
+    font-weight: 600;
+  }
+}
+#sidebar ul li.active a{
+  color: var(--accent-clr);
+
+  svg{
+    fill: var(--accent-clr);
+  }
+}
+
+#sidebar a, #sidebar .dropdown-btn, #sidebar .logo{
+  border-radius: .5em;
+  padding: .85em;
+  text-decoration: none;
+  color: var(--text-clr);
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+.dropdown-btn{
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  font: inherit;
+  cursor: pointer;
+}
+#sidebar svg{
+  flex-shrink: 0;
+  fill: var(--text-clr);
+}
+#sidebar a span, #sidebar .dropdown-btn span{
+  flex-grow: 1;
+}
+#sidebar a:hover, #sidebar .dropdown-btn:hover{
+  background-color: var(--hover-clr);
+}
+#sidebar .sub-menu{
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: 300ms ease-in-out;
+
+  > div{
+    overflow: hidden;
+  }
+}
+#sidebar .sub-menu.show{
+  grid-template-rows: 1fr;
+}
+.dropdown-btn svg{
+  transition: 200ms ease;
+}
+.rotate svg:last-child{
+  rotate: 180deg;
+}
+#sidebar .sub-menu a{
+  padding-left: 2em;
+}
+#toggle-btn{
+  margin-left: auto;
+  padding: 1em;
+  border: none;
+  border-radius: .5em;
+  background: none;
+  cursor: pointer;
+
+  svg{
+    transition: rotate 150ms ease;
+  }
+}
+#toggle-btn:hover{
+  background-color: var(--hover-clr);
+}
+
+main{
+  padding: min(30px, 7%);
+}
+
+.container-wallet{
+  border: 1px solid var(--accent-clr);
+  width: 30em;
+  border-radius: 1em;
+  margin-bottom: 20px;
+  padding: min(1em);
+  align-items: center;
+  justify-content: center;
+  
+
+}
+
+.container-wallet p{
+  margin: 0 10em .5em 0;
+}
+
+.wallet-card{
+  width: 28em;
+  height: 10em;
+  border-radius: 1em;
+  padding: min(1em);
+  margin: 0 auto;
+  background-color: var(--accent-clr);
+}
+
+#billetera{
+  background-color: transparent;
+  color: var(--accent-clr);
+  border: 1px solid var(--accent-clr);
+  border-radius: .5em;
+  cursor: pointer;
+}
+
+.wallet-card-buttons{
+  width: 8em;
+  align-items: center;
+
+}
+
+.wallet-card-buttons button{
+  background-color: transparent;
+  padding: .3em;
+  border-radius: .5em;
+  border: 1px solid var(--accent-clr);
+  cursor: pointer;
+  margin: .5em;
+}
+
+.wallet-card-buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px; /* Espacio reducido entre botones */
+  margin: 0em 1em;
+}
+
+.button-container {
+  width: 4em;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.button-container {
+  flex-direction: column; /* Apilar el botón y el texto verticalmente */
+  align-items: center; /* Centrar el contenido horizontalmente */
+  text-align: center; /* Centrar el texto dentro del párrafo */
+}
+
+.button-container button {
+  display: flex;
+  align-items: center; /* Centrar SVG verticalmente */
+  justify-content: center; /* Centrar SVG horizontalmente */
+  width: 3em; /* Ancho fijo para los botones */
+  height: 3em; /* Altura fija para los botones */
+  border: 1px solid var(--accent-clr);
+  border-radius: 10px; /* Bordes redondeados */
+  color: white;
+  cursor: pointer;
+  text-align: center;
+}
+
+button:hover {
+  background-color: #4b52d6; /* Color al pasar el mouse */
+}
+
+
+.container-wallet-card{
+  display: flex;
+}
+
+/* Estilos para el formulario */
+#expense-form {
+  background-color: var(--base-clr);
+  border: 1px solid var(--accent-clr);
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: absolute; /* Posicionamiento absoluto */
+  top: 50%; /* Centrar verticalmente */
+  left: 50%; /* Centrar horizontalmente */
+  transform: translate(-50%, -50%); /* Ajuste para centrar */
+  width: 30px; /* Ancho fijo */
+  display: none; /* Inicialmente oculto */
+  z-index: 1000; /* Asegurar que esté por encima de otros elementos */
+}
+
+#expense-form h3 {
+  margin-top: 0;
+}
+
+#expense-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+#expense-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#expense-form button {
+  margin-right: 10px;
+}
+
+/* Estilos para el fondo oscuro */
+.overlay {
+  display: none; /* Inicialmente oculto */
+  position: fixed; /* Fijo para cubrir toda la pantalla */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Fondo oscuro */
+  z-index: 999; /* Asegurar que esté por encima de otros elementos */
+}
+
+/* Estilos para el formulario emergente */
+#expenseForm {
+  position: absolute; /* Posición absoluta */
+  top: 20px; /* Distancia desde la parte superior */
+  left: 50%; /* Centrar horizontalmente */
+  transform: translateX(-50%); /* Ajuste para centrar */
+  background-color: #11121a; /* Color de fondo blanco */
+  border: 1px solid #ddd; /* Borde gris claro */
+  border-radius: 10px; /* Bordes redondeados */
+  padding: 20px; /* Espaciado interno */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para destacar */
+  z-index: 100; /* Asegurarse de que el formulario esté por encima */
+  width: 300px; /* Ancho del formulario */
+}
+
+/* Estilos para las etiquetas del formulario */
+#expenseForm label {
+  display: block; /* Cada etiqueta ocupa una línea completa */
+  margin-bottom: 5px; /* Espaciado inferior */
+  font-weight: bold; /* Texto en negrita */
+}
+
+/* Estilos para los campos de entrada del formulario */
+#expenseForm input {
+  width: 100%; /* Ancho completo */
+  padding: 10px; /* Espaciado interno */
+  margin-bottom: 15px; /* Espaciado inferior */
+  border: 1px solid #222533; /* Borde gris */
+  border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Estilos para los botones dentro del formulario */
+#expenseForm button {
+  background-color: #5e63ff; /* Color de fondo */
+  color: #11121a; /* Color del texto */
+  border: none; /* Sin borde */
+  padding: 10px 15px; /* Espaciado interno */
+  border-radius: 5px; /* Bordes redondeados */
+  cursor: pointer; /* Cambiar cursor al pasar el ratón */
+  width: 100%; /* Ancho completo */
+}
+
+#expenseForm button:hover {
+  background-color: #4a52cc; /* Color de fondo al pasar el ratón */
+}
+
+/* Estilos para el botón de crear billeteras */
+#createWalletButton {
+  color: #ffffff; /* Color del texto */
+  border: none; /* Sin borde */
+  padding: 10px 20px; /* Espaciado interno */
+  border-radius: 5px; /* Bordes redondeados */
+  cursor: pointer; /* Cambiar cursor al pasar el ratón */
+  font-size: 16px; /* Tamaño de fuente */
+  transition: background-color 0.3s; /* Transición suave */
+  margin-top: 20px; /* Espaciado superior */
+  width: 150px; /* Ancho del botón */
+}
+
+#createWalletButton:hover {
+  background-color: #218838; /* Color de fondo al pasar el ratón */
+}
+
+table{
+  border: 1px solid var(--accent-clr);
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  padding: 20px;
+}
+
+h1, h2 {
+  color: #333;
+}
+
+button {
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: var(--accent-clr);
+}
+
+.wallet-card-buttons {
+  margin-top: 20px;
+}
+
+.button-container {
+  display: inline-block;
+}
+
+button svg {
+  fill: #e8eaed;
+}
+
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+  padding-top: 60px;
+}
+
+.modal-content {
+  margin: 5% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 400px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  border-radius: 8px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+input[type="text"], input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+
+/* Modal Styles (Aplica para todos los formularios emergentes) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+  padding-top: 60px;
+}
+
+.modal-content {
+  background-color: var(--hover-clr);
+  margin: 5% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 400px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  border-radius: 8px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+input[type="text"], input[type="number"], select {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+
+
+button[type="submit"]:hover {
+  background-color: var(--accent-clr);
+}
+
+*{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#saldo-total {
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+/* Listas de items (Billeteras y Categorías) */
+#wallet-list, #category-list, #transaction-list {
+  margin-top: 10px;
+}
+
+#wallet-list div, #category-list div, #transaction-list div {
+  display: none;
+}
+
+#transaction-list div{
+  background-color: #5e63ff;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(189, 139, 139, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 400px;
+  height: 50px;         /* Limita el ancho máximo a 400px */
+  white-space: nowrap;       /* Evita que el texto se divida en varias líneas */
+  overflow: hidden;          /* Oculta cualquier contenido que exceda el área del div */
+  text-overflow: ellipsis;
+}
+
+.close {
+  color: var(--accent-clr);
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover, .close:focus {
+  color: black;
+}
+
+/* Formulario dentro de los Modales */
+.modal-content input, .modal-content select {
+  width: 95%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 2px solid #5e63ff;
+  border-radius: 5px;
+  background-color: var(--text-clr)
+}
+
+.Agregar{
+  background-color: transparent;
+  border-radius: .5em;
+  border: 1px solid #5e63ff;
+  padding: .5em;
+  color: #5e63ff;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Transición de color suave */
+
+}
+
+.Agregar:hover{
+  background-color: #5e63ff;
+  color: white    ;
+}
+
+#transaction-list{
+  background-color: transparent;
+  border: 1px solid var(--accent-clr);
+  border-radius: 20px;
+  width: 420px;
+  padding: 1em;
+}
+
+.expense {
+  background-color: red;
+  color: white;
+  padding: .3em;
+  border-radius: .4em;
+  border: none;
+}
+
+
+h3{
+  color: var(--accent-clr);
+}
+
+.income {
+  background-color: green; /* Color verde para ingresos */
+  color: white;
+  padding: .3em;
+  border-radius: .4em;
+  border: none;
+}
+
+/* Animación para que el modal aparezca de forma suave */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(-20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Botón de cierre del modal */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+/* Gráfico */
+canvas {
+  max-width: 100%;
+}
+
+.Buttons{
+  background-color: transparent;
+  border: 1px solid #5e63ff;
+  border-radius: .3em;
+}
+
+.modal {
+  display: none; /* Asegúrate de que los modales estén ocultos por defecto */
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.5); /* Fondo oscuro */
+}
+
+#wallet-list, #category-list{
+  display: none;
+}
+
+.modal-content {
+  background-color: var(--base-clr);
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid var(--accent-clr);
+  width: 80%;
+}
+
+#walletSelectSubtotal{
+  background-color: transparent;
+  border: 1px solid var(--accent-clr);
+  color: var(--accent-clr);
+  border-radius: .5em;
+  width: 100px;
+  height: 25px;
+  padding: 0em .3em ;
+  margin: 0em .5em .5em .5em;
+}
+
+.Wallet-Container{
+  border: 1px solid var(--accent-clr);
+  border-radius: 20px;
+  padding: .5em 1em;
+  width: 420px;
+  display: flex;
+}
+
+.wallet-card-container{
+  background-image: url(../Assets/Png/Mesa\ de\ trabajo\ 1.png);
+  background-size: cover;
+  padding: 1em;
+  border-radius: 10px;
+  margin: .5rem;
+  min-width: 250px;
+}
+
+.container{
+  display: grid;
+  grid-template-columns:repeat(2, 2fr);
+  height: 120px;
+  gap: 10px;
+  margin: 50px 5px 0px ;
+}
+
+.transaction-item{
+  margin-top: .5em;
+}
+
+
+#transaction-list{
+  height: 240px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  box-shadow: inset 0px -10px 15px -10px rgba(0, 0, 0, 1); /* Sombra interna en la parte inferior */
+
+}
+
+
+#transaction-list h3 {
+  margin: 0; /* Elimina el margen predeterminado */
+  padding: 10px; /* Agrega un poco de espacio interno */
+  font-size: 1.2em; /* Tamaño de fuente más grande */
+  text-align: center; /* Centra el texto */
+  border-bottom: 1px solid #ccc; /* Línea divisoria debajo del encabezado */
+}
+
+.container{
+  margin-left:15px ;
+}
+
+.delete-btn{
+  background-color: transparent;
+  color: black;
+  border-radius: 10px;
+}
+
+.delete-btn:hover{
+  background-color: var(--hover-clr);
+  border-radius: 10px;
+  color: var(--accent-clr);
+}
+
+
+
+
+
+#goalModal, #savingsModal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #11121a;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  z-index: 1000;
+  border: 1px solid #5E63FF;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"] {
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus {
+  border-color: #36a2eb;
+  outline: none;
+}
+
+/*goalsList*/
+
+#goalsList {
+  display: flex;
+  justify-content: center;
+  border-radius: 20px;
+  gap:.5rem;
+  border: 1px solid #5E63FF;
+  margin: 10px 0px;
+  display: flex;
+  flex-flow: row;
+  max-width: 452px;
+  overflow: scroll;
+}
+
+#goalsList div {
+  display: flex;
+  align-items: center;
+  color: #5E63FF;
+  max-width: 500px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+
+
+#goalsList h3 {
+  font-size: .9rem;
+  color: #5E63FF;
+  margin-bottom: 0.5rem;
+}
+
+#goalsList p {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #5E63FF;
+  text-align: center;
+}
+
+#goalsList button {
+  padding: 0.5rem 1rem;
+  background-color: transparent;
+  border: 1px solid #5E63FF;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 0.5rem;
+  transition: background-color 0.2s;
+  color: #5E63FF;
+  
+}
+
+#goalsList button:hover {
+  background-color: #4b50e1;
+  color: white;
+}
+
+#goalsList div button{
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 30px;
+}
+
+#goalsList div canvas{
+  width: 100px;
+  justify-content: center;
+  align-items: center;
+}
+
+#goalsList::-webkit-scrollbar {
+  display: none; /* Oculta la barra de desplazamiento */
+}
+
+#goalsList p{
+  color: white;
+  font-size: 17px;
+  font-weight: normal;
+}
+
+#goalsList svg{
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+/*---------------------------------------------------------------------*/
+
+
+/* Estilo del mensaje de éxito */
+#success-message {
+  display: none;
+  background-color: #5E63FF;
+  color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: none; /* Ocultar por defecto */
+  z-index: 999;
+}
+
+/* Estilos para el modal de confirmación */
+#deleteConfirmationModal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 20px;
+  z-index: 1000;
+  display: none; /* Oculto por defecto */
+}
+
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none; /* Oculto por defecto */
+}
+
+/* Otros estilos que necesites para tu aplicación */
+
+/*---------------------------------------------------------------------*/
+
+.goal-item{
+  border: 1px solid #5E63FF;
+  height: 120px;
+}
+
+/*--------------------------------------------*/
+#openGoalModal{
+  background-color: transparent;
+  border: 1px solid var(--accent-clr);
+  border-radius: 5px;
+}
+
+#openGoalModal:hover{
+  background-color: var(--accent-clr);
+}
+/*--------------------------------------------*/
+
+#goalsList {
+  display: flex;
+  justify-content: flex-start;
+  border-radius: 20px;
+  gap: .7rem;
+  border: 1px solid #5E63FF;
+  margin: 10px 0px;
+  max-width: 432px;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 10px;
+}
+
+.goal-item {
+  flex: 0 0 auto; /* Evita que los elementos cambien de tamaño */
+}
+
+#goalsList::-webkit-scrollbar {
+  display: none;
+}
+
+.goal-info canvas{
+  width: 0px;
+}
+
+.goal-item p{
+  width: 100%;
+  margin: 0px 20px;
+}
+
+.goal-item canvas{
+  width: 10px;
+  margin: 0px 15px;
+}
+
+#goalsList{
+  height: 120px;
+}
+
+.Texto-divs{
+  margin: 8px 0px 0px 8px;
+  width: 200px;
+}
+
+#goalsList, #transaction-list{
+  margin-top: 5px;
+}
+
+.goal-info p{
+  text-align: center;
+  display: grid;
+}
+
+#goalModal h3, #savingsModal h3{
+  color: var(--accent-clr);
+  font-size: 18px;
+  margin: 5px 10px;
+  text-align: center;
+}
+
+#closeGoalModal, #sumbitGoalModal, #closeSavingsModal, #sumbitSavingsModal{
+  border: 1px solid var(--accent-clr);
+  background-color: transparent;
+  border-radius: 10px;
+  color: white;
+  margin: 10px 0px;
+}
+
+#closeGoalModal:hover, #sumbitGoalModal:hover{
+  background-color: var(--accent-clr);
+}
+
+#calendar {
+  width: 385px;
+  height: 380px;
+  background-color: transparent;
+  border-radius: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  color: white;
+  border: none; /* Eliminar el borde del calendario */
+  overflow: hidden;
+  box-sizing: border-box; /* Mantiene la forma del calendario */
+  display: flex;
+  flex-direction: column;
+  margin: 0px 20px;
+  background-color: transparent;
+  border: 1px solid var(--accent-clr);
+}
+
+#calendar * {
+  border: none; /* Eliminar bordes de todos los elementos dentro del calendario */
+  text-align: center; /* Centrar el texto horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+  justify-content: center; /* Centrar horizontalmente */
+}
+
+#calendar button {
+  color: white; /* Cambiar el color del texto del botón a blanco */
+  border: 1px solid var(--accent-clr);
+  background-color: transparent;
+  border-radius: 5px; /* Opcional: redondear los bordes del botón */
+  padding: 10px; /* Opcional: agregar padding para un mejor aspecto */
+  cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */
+  margin: 0px 20px;
+}
+
+#calendar button:hover {
+  background-color: var(--accent-clr); /* Cambiar el color al pasar el mouse */
+}
+
+
+
+
+.modal {
+  display: none; /* Ocultar el modal por defecto */
+  position: fixed; /* Posicionarlo de forma fija */
+  z-index: 1000; /* Asegurarse de que esté en la parte superior */
+  left: 0;
+  top: 0;
+  width: 100%; /* Ancho completo */
+  height: 100%; /* Altura completa */
+  overflow: auto; /* Habilitar scroll si es necesario */
+  background-color: rgba(0, 0, 0, 0.4); /* Fondo con opacidad */
+}
+
+.modal-content {
+  background-color: var(--base-clr);
+  color: white;
+  margin: 10% auto; /* Reduce el margen superior */
+  padding: 15px; /* Reduce el padding */
+  border: 1px solid var(--accent-clr);
+  width: 90%; /* Ajusta el ancho del modal */
+  max-width: 400px; /* Máximo ancho reducido */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.close,
+.close-info {
+  color: var(--accent-clr);
+  float: right;
+  font-size: 24px; /* Reduce el tamaño de la fuente */
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus,
+.close-info:hover,
+.close-info:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+  width: calc(100% - 20px);
+  padding: 8px; /* Reduce el padding */
+  margin-bottom: 15px; /* Reduce el margen inferior */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: transparent;
+  border: 1px solid var(--accent-clr);
+  color: var(--accent-clr);
+  padding: 8px 12px; /* Reduce el padding */
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px; /* Reduce el tamaño de la fuente */
+}
+
+button:hover {
+  background-color: var(--accent-clr); /* Verde más oscuro */
+  color: white;
+}
+
+#eventInfoTitle {
+  margin-bottom: 8px; /* Reduce el margen inferior */
+  font-size: 18px; /* Reduce el tamaño de la fuente */
+}
+
+/* Asegúrate de tener estos estilos en tu CSS */
+.fc-day-today {
+  background-color: var(--accent-clr) !important; /* Color de fondo */
+  color: white !important; /* Color de texto blanco */
+}
+
+.modal-content {
+  text-align: center;
+}
+
+.evento-ingreso {
+  background-color: green; /* Color de fondo verde para ingresos */
+  color: white; /* Color de texto blanco para mejor contraste */
+  border: none;
+}
+
+.evento-gasto {
+  background-color: red; /* Color de fondo rojo para gastos */
+  color: white; /* Color de texto blanco para mejor contraste */
+  border: none;
+  box-shadow: none;
+}
+
+.Div1{
+  width: 455px;
+  height: 700px;
+}
+
+.fc-toolbar-title{
+  color: var(--accent-clr);
+}
+
+.calendar-cell {
+  border: 1px solid #5e63ff; /* Borde interno para las celdas del calendario */
+  padding: 5px; /* Espacio interno para las celdas */
+}
+
+.modal-content h2{
+  margin: 10px 0px;
+  color: var(--accent-clr);
+}
+
+#deleteEvent{
+  margin: 10px 0px;
+}
+
+.fc-prev-button .fc-button .fc-button-primary{
+  background-color: red;
+}
+
+#calendar-btn {
+  background-color: #5e63ff; /* Color morado */
+  color: white; /* Cambia el texto a blanco para mejor contraste */
+  border: none; /* Elimina el borde */
+  padding: 8px 12px; /* Ajusta el espacio alrededor del texto */
+  border-radius: 5px; /* Opcional: redondea las esquinas */
+}
+
+#calendar-btn {
+  background-color: #5e63ff !important;
+  color: white !important;
+}
+
+#goalsList button{
+  border: none;
+  width: 120%;
+}
+
+#transaction-list button{
+  border: none;
+  width: 100%;
+  height: 240px;
+  margin: 0 auto;
+}
+
+#transaction-list button:hover{
+  background-color: var(--hover-clr);
+}
+
+#modal-content{
+  overflow-y: hidden;
+}
+
+#goalsList button svg{
+  margin: 1px 175px;
+  transition: border 0.3s ease;
+}
+
+#goalsList button:hover{
+  background-color: var(--hover-clr);
+}
+
+
+@media(max-width: 800px){
+  body{
+    grid-template-columns: 1fr;
+    overflow-y: scroll;
+  }
+  main{
+    padding: 2em 1em 60px 1em;
+    display: grid;
+
+  }
+  .container{
+    border: none;
+    padding: 0;
+  }
+
+  #calendar{
+    width: 90%;
+  }
+
+  .Div2{
+    justify-content: center;
+    align-items: center;
+  }
+
+  #sidebar{
+    height: 60px;
+    width: 100%;
+    border-right: none;
+    border-top: 1px solid var(--line-clr);
+    padding: 0;
+    position: fixed;
+    top: unset;
+    bottom: 0;
+    z-index: 100000;
+
+    > ul{
+      padding: 0;
+      display: grid;
+      grid-auto-columns: 60px;
+      grid-auto-flow: column;
+      align-items: center;
+      overflow-x: scroll;
+    }
+    ul li{
+      height: 100%;
+    }
+    ul a, ul .dropdown-btn{
+      width: 60px;
+      height: 60px;
+      padding: 0;
+      border-radius: 0;
+      justify-content: center;
+    }
+
+    ul li span, ul li:first-child, .dropdown-btn svg:last-child{
+      display: none;
+    }
+
+    ul li .sub-menu.show{
+      position: fixed;
+      bottom: 60px;
+      left: 0;
+      box-sizing: border-box;
+      height: 60px;
+      width: 100%;
+      background-color: var(--hover-clr);
+      border-top: 1px solid var(--line-clr);
+      display: flex;
+      justify-content: center;
+
+      > div{
+        overflow-x: auto;
+      }
+      li{
+        display: inline-flex;
+      }
+      a{
+        box-sizing: border-box;
+        padding: 1em;
+        width: auto;
+        justify-content: center;
+      }
+    }
+  }
+
+  #calendar{
+    margin: 20px 0px 0px 0px;
+    width: 450px;
+    
+  }
+
+  .Panel-Datos{
+    margin: 0 auto;
+  }
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Estilo para el botón (sin cambios) */
+.Tittle {
+  position: relative;
+}
+
+/* Estilo para el texto emergente */
+.Tittle::after {
+  position: absolute;
+  top: -30px; /* Ajusta la posición del texto */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #222533;
+  color: white; /* Texto en color blanco */
+  padding: 5px;
+  border-radius: 4px;
+  opacity: 0; /* Inicialmente invisible */
+  visibility: hidden; /* No visible por defecto */
+  transition: opacity 0.3s, visibility 0.3s; /* Animación para aparecer */
+}
+
+/* Mostrar el texto cuando el ratón pasa por encima */
+.Tittle:hover::after {
+  opacity: 1; /* Hace que el texto sea visible */
+  visibility: visible; /* Hace que el texto sea visible */
+}
+
+.Categorias::after{
+  content: "Categorias"; /* El texto que aparecerá */
+}
+
+.Wallets::after{
+  content: "Billeteras"; /* El texto que aparecerá */
+}
+
+.Transacciones::after{
+  content: "Movimientos"; /* El texto que aparecerá */
+}
+
+.Ahorros::after{
+  content: "Ahorros"; /* El texto que aparecerá */
+}
+
+/* Estilos del modal */
+.modal {
+  display: none; /* Oculto por defecto */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  font-size: 16px;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+}
+
+.modal-content button{
+  margin: 0px 5px ;
+}
+
+.Panel-Datos{
+  padding: 1rem;
+  width: 290px;
+  height: 10px;
+  border: 1px solid var(--accent-clr);
+  border-radius: 20px;
+}
+
+.Panel-Datos{
+  padding: 1rem;
+  width: 300px;
+  height: 680px;
+  border: 1px solid var(--accent-clr);
+  border-radius: 20px;
+}
+
+.Panel-Datos p{
+  font-size: 16px;
+}
+
+.Panel-Datos h2, .Balance_Mensual{
+  color: var(--accent-clr);
+  margin: 5px 0px;
+}
+
+.Balance_Mensual{
+  font-weight: 600;
+}
+
+
+.Panel-Datos {
+  padding: 20px 10px;
+  border: 1px solid var(--accent-clr);
+  border-radius: 20px;
+  width: 330px;
+  height: 654px;
+}
+
+/* Título y demás texto */
+.Balance_Mensual {
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: left; /* Aseguramos que el texto esté alineado a la izquierda */
+}
+
+/* Contenedor del círculo de progreso */
+.circle-container {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto; /* Centra el círculo */
+  display: flex; /* Usamos flexbox para centrar el contenido */
+  justify-content: center; /* Centra el contenido horizontalmente */
+  align-items: center; /* Centra el contenido verticalmente */
+}
+
+/* Círculo de fondo */
+.circle-background {
+  stroke: #e0e0e0; /* Color gris para el fondo */
+  stroke-width: 13px; /* Aumenta el grosor del círculo de fondo */
+}
+
+/* Círculo de progreso (inicialmente blanco) */
+.circle-progress {
+  stroke: #ffffff; /* Color blanco por defecto */
+  stroke-dasharray: 565.48; /* Circunferencia del círculo (2πr = 2*π*90) */
+  stroke-dashoffset: 565.48; /* Comienza en 100% (vacío) */
+  transition: stroke-dashoffset 1s ease-out, stroke 1s ease-out;
+  transform: rotate(-90deg); /* Para que empiece desde arriba */
+}
+
+/* Texto que muestra el porcentaje */
+#percentage-text {
+  position: absolute;
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--accent-clr);
+  /* El texto está centrado dentro del círculo debido al contenedor flexbox */
+}
+
+.Listo{
+  margin-bottom:  5px ;
+}
+
+.task-container{
+  width: 500px;
+  height: 200px;
+}
+
+.container-consejos {
+  text-align: center;
+  padding: 5px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  height: 300px;
+  color: white;
+  display: grid;
+}
+
+#advice-container p {
+  font-size: 16px;
+  color: white;
+  margin: 15px 0;
+  line-height: 1.6;
+}
+
+.Nuevo-Consejo{
+  width: 100;
+  height: 50px;
+  background-color: transparent;
+  border-radius: 20px;
+  border: 1px solid var(--accent-clr);
+}
+
+.div-consejos{
+  margin: 8px;
+  color: var(--accent-clr);
+  font-weight: 600;
+}

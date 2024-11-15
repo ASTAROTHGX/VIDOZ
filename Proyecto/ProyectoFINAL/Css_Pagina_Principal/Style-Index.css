@@ -1,0 +1,902 @@
+/* Estilos Globales */
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    list-style: none;
+    box-sizing: border-box;
+    
+}
+
+html {
+    font-size: 62.5%; /* Tamaño base de la fuente para facilitar cálculos con rem */
+    overflow-x: hidden; /* Ocultar desplazamiento horizontal */
+
+}
+
+body{
+    overflow-x: hidden; /* Ocultar desplazamiento horizontal */
+
+}
+
+h1 {
+    font-size: 5rem; /* Tamaño de fuente para elementos h1 */
+}
+
+p {
+    font-size: 2rem; /* Tamaño de fuente para párrafos */
+}
+/*------------------------------------------------------------------------------------------*/
+
+/* Encabezado */
+header {
+    display: flex; /* Uso de Flexbox para la alineación */
+    justify-content: flex-end; /* Alinear elementos al final del encabezado */
+    align-items: center; /* Centrar elementos verticalmente */
+    padding: 1rem 2rem; /* Espaciado interno */
+    margin-bottom: 8rem; /* Margen inferior para separación */
+}
+
+.Barra-Navegacion-Lista-Movil svg{
+    position: absolute;
+    right: 2rem;
+    display: none;
+}
+
+
+
+/* Estilo del sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 250px;
+    height: 100%;
+    border: 2px solid white;
+    background-color: #4164E3;
+    border-radius: 30px 0px 0px 30px ;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    transition: right 0.3s ease;
+    z-index: 10;
+}
+
+/* Mostrar sidebar */
+.sidebar.show {
+    right: 0;
+}
+
+/* Botón de cierre del sidebar */
+.close-btn {
+    font-size: 1.2rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    align-self: flex-end;
+    margin-right: 20px;
+}
+
+/* Lista del sidebar */
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.sidebar li {
+    margin: 20px 0;
+}
+
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.sidebar a:hover {
+    color: #5E63FF;
+}
+
+
+/* Posicionamiento y tamaño del logo */
+.Logo img {
+    position: absolute; /* Posicionamiento absoluto */
+    top: 2rem; /* Posición desde la parte superior */
+    left: 7rem; /* Posición desde la izquierda */
+    height: 70px; /* Altura del logo */
+}
+
+/* Estilos de la lista de navegación */
+.Barra-Navegacion-Lista {
+    display: flex; /* Uso de Flexbox para alineación horizontal */
+    margin-top: 2rem; /* Margen superior */
+}
+
+.Barra-Navegacion-Lista a {
+    border: 2px solid white; /* Borde blanco */
+    border-radius: .5rem; /* Bordes redondeados */
+    font-size: 1.7rem; /* Tamaño de la fuente */
+    transition: background-color 0.3s ease; /* Transición para el cambio de color de fondo */
+}
+/* Estilos de los botones de registro y sesión */
+.Barra-Navegacion-Lista-Registro, .Barra-Navegacion-Lista-IniciarSesion {
+    font-weight: 500; /* Peso de la fuente */
+    padding: 0.5rem 2.3rem; /* Espaciado interno */
+}
+
+.Barra-Navegacion-Lista-Registro {
+    color: black; /* Color de texto negro */
+    background-color: white; /* Color de fondo blanco */
+}
+
+.Barra-Navegacion-Lista-IniciarSesion {
+    color: white; /* Color de texto blanco */
+}
+
+.Barra-Navegacion-Lista-Registro:hover, .Barra-Navegacion-Lista-IniciarSesion:hover {
+    transform: scale(2); /* Escala el elemento al pasar el ratón */
+}
+
+.Barra-Navegacion-Lista-Registro:hover {
+    color: white; /* Color de texto blanco al pasar el ratón */
+    background-color: transparent; /* Fondo transparente al pasar el ratón */
+    border: 2px solid white; /* Borde blanco al pasar el ratón */
+}
+
+.Barra-Navegacion-Lista-IniciarSesion:hover {
+    color: black; /* Color de texto negro al pasar el ratón */
+    background-color: white; /* Fondo blanco al pasar el ratón */
+}
+
+.Barra-Navegacion-Lista-Registro-movil{
+    padding: 1rem 4rem;
+    color: black !important; 
+    background-color: white;
+    border-radius: 5px;
+}
+
+.Barra-Navegacion-Lista-Registro-movil:hover{
+    background-color: transparent;
+    border: 2px solid white;
+    color: white !important;
+}
+
+.Barra-Navegacion-Lista-IniciarSesion-movil{
+    padding: 1rem 2.6rem;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+.Barra-Navegacion-Lista-IniciarSesion-movil:hover{
+    background-color: white;
+    color: black !important;
+}
+
+/*------------------------------------------------------------------------------------------*/
+
+/* Contenido Principal Main */
+.Contenido-Principal {
+    width: 100%; /* Ancho del 100% */
+    height: 65rem; /* Altura de 65rem */
+    background-repeat: no-repeat; /* No repetir la imagen de fondo */
+    background-image: url(../Assets/Svg/Elementos_Graficos/Fondo_Principal_Index.svg); /* Imagen de fondo */
+    background-size: cover; /* Cubrir todo el contenedor con la imagen de fondo */
+    background-position: center; /* Centrar la imagen de foXndo */
+}
+/* Contenedor Principal del Contenido Principal */
+.Contenido-Principal-Div {
+    display: flex; /* Uso de Flexbox para la alineación */
+    color: white; /* Color de texto blanco */
+    margin: 0 auto; /* Margen automático para centrar */
+    margin-top: 0; /* Margen superior */
+    height: 30rem; /* Altura */
+    justify-content: center; /* Centrar contenido horizontalmente */
+    gap: 3rem; /* Espacio entre elementos */
+}
+
+.Contenido-Principal-Div h1 {
+    font-size: 6rem; /* Tamaño de fuente para h1 */
+}
+
+.Contenido-Principal-Div p {
+    font-size: 2.5rem; /* Tamaño de fuente para párrafos */
+    margin-top: 2rem; /* Margen superior */
+}
+
+.Contenido-Principal-Img {
+    width: 75rem; /* Ancho */
+    height: 75rem; /* Altura */
+}
+
+/*------------------------------------------------------------------------------------------*/
+
+/* Sección de Nuestras Características */
+.Nuestras-Caracteristicas-Texto {
+    display: grid; /* Uso de grid para la disposición */
+    margin: 5rem 10rem 3rem 0; /* Margen */
+    gap: 1rem; /* Espacio entre elementos de la cuadrícula */
+    width: 65rem; /* Ancho */
+    height: 15rem; /* Altura */
+    background-color: white; /* Color de fondo */
+    justify-content: center; /* Centrar elementos horizontalmente */
+}
+
+.Nuestras-Caracteristicas-Texto h1 {
+    font-size: 6rem; /* Tamaño de fuente para h1 */
+    margin-right: 20rem; /* Margen derecho */
+}
+
+.Nuestras-Caracteristicas-Texto p {
+    font-size: 2.5rem; /* Tamaño de fuente para párrafos */
+    color: #515151; /* Color del texto */
+}
+
+/* Contenedor flex para características */
+.Nuestras-Caracteristicas-Ul {
+    display: flex; /* Uso de Flexbox para disposición */
+    margin-top: 1rem; /* Margen superior */
+    font-size: 2.5rem; /* Tamaño de fuente */
+    width: 50rem; /* Ancho */
+}
+
+/* Estilos para elementos de lista */
+li {
+    padding: 1.5rem; /* Relleno interno */
+}
+/* Margen izquierdo para span dentro de li */
+li span {
+    margin-left: 1rem; /* Margen izquierdo */
+}
+
+/* Estilos para elementos svg */
+svg {
+    width: 4rem; /* Ancho de 4rem */
+    height: 4rem; /* Altura de 4rem */
+}
+
+/* Estilos para la sección */
+section {
+    display: flex; /* Uso de Flexbox para disposición */
+    justify-content: center; /* Centrar elementos horizontalmente */
+    height: 70rem; /* Altura de la sección */
+}
+
+/* Estilos para círculos de características */
+.Nuestras-Caracteristicas-Circulo {
+    margin: 8rem 2rem 0rem 0rem; /* Margen alrededor del círculo */
+    width: 55rem; /* Ancho del círculo */
+}
+
+/*------------------------------------------------------------------------------------------*/
+
+/* Sección de Funcionalidad */
+.Funcionalidad {
+    justify-content: center; /* Centrar contenido horizontalmente */
+    height: 70rem; /* Altura de la sección */
+    background-color: #F6F6F6; /* Color de fondo */
+    gap: 10rem; /* Espacio entre elementos */
+    padding: 3rem; /* Espaciado superior */
+}
+
+.Funcionalidad-Img img {
+    width: 60rem; /* Ancho de la imagen */
+    height: 60rem; /* Altura de la imagen */
+    margin: 2rem 0rem 2rem 2rem; /* Márgenes alrededor de la imagen */
+}
+
+.Funcionalidad-Texto h1 {
+    margin-bottom: 1rem; /* Margen inferior */
+    font-size: 6rem; /* Tamaño de fuente para h1 */
+}
+
+.Funcionalidad-Texto p {
+    color: #515151;
+}
+
+.Contenedor-Funcionalidad-Funcionalidades, .Contenedor-Funcionalidad-Funcionalidades-2 {
+    width: 270px; /* Ancho del contenedor */
+    height: 75px; /* Altura del contenedor */
+    background-color: white; /* Color de fondo blanco */
+    display: flex; /* Uso de Flexbox para la disposición */
+    align-items: center; /* Alinear elementos verticalmente al centro */
+    border-radius: 5px; /* Bordes redondeados */
+    margin: 20px; /* Márgenes alrededor del contenedor */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra del contenedor */
+    transition: transform 0.5s ease; /* Transición para el efecto hover */
+}
+/* Estilos para el ícono dentro del contenedor de funcionalidad */
+.Contenedor-Funcionalidad-Icono, .Contenedor-Funcionalidad-Icono-2{
+    display: flex; /* Uso de Flexbox para la disposición */
+    width: 48px; /* Ancho del ícono */
+    height: 48px; /* Altura del ícono */
+    background-color: #E4EBF2; /* Color de fondo del ícono */
+    justify-content: center; /* Centrar ícono horizontalmente */
+    border-radius: 10px; /* Bordes redondeados */
+    margin: 20px 30px 20px 20px; /* Márgenes alrededor del ícono */
+}
+
+/* Estilos para la imagen dentro del contenedor de funcionalidad */
+.Contenedor-Funcionalidad-Funcionalidades img,.Contenedor-Funcionalidad-Funcionalidades-2 img {
+    padding: 8px; /* Relleno interno de la imagen */
+}
+
+/* Estilos para el texto dentro del contenedor de funcionalidad */
+.Contenedor-Funcionalidad-Funcionalidades span,
+.Contenedor-Funcionalidad-Funcionalidades-2 span {
+    font-size: 1.8rem; /* Tamaño de fuente */
+}
+
+/* Estilos para el contenedor de funcionalidad con fondo */
+.Contenedor-Funcionalidad {
+    position: absolute; /* Posicionamiento absoluto */
+    margin-left: 85rem; /* Margen izquierdo */
+    margin-top: 25rem; /* Margen superior */
+}
+
+/* Estilos para la sección de Funcionalidad 2 */
+.Contenedor-Funcionalidad-Funcionalidades-2 {
+    margin-left: 8rem; /* Margen izquierdo */
+    width: 300px; /* Ancho */
+}
+
+/* Efecto hover para el contenedor de funcionalidad */
+.Contenedor-Funcionalidad-Funcionalidades:hover, .Contenedor-Funcionalidad-Funcionalidades-2:hover {
+    transform: scale(1.09); /* Efecto de escala al pasar el ratón */
+}
+
+/*------------------------------------------------------------------------------------------*/
+
+/* Sección del Sistema */
+.Contenedor-Sistema {
+    width: 100%; /* Altura de la sección */
+    justify-content: center;
+}
+
+/* Contenedor principal del sistema */
+.Contenedor-Sistema-Texto {
+    align-items: center;
+    justify-content: center;
+    width: 45rem;
+    padding-top: 3rem;
+    margin: 1rem;
+}
+
+/* Título del sistema */
+.Contenedor-Sistema-Texto h1 {
+    margin: 0rem; /* Margen alrededor del título */
+}
+
+/* Párrafo dentro del sistema */
+.Contenedor-Sistema-Texto p {
+    margin: 1rem; /* Margen alrededor del párrafo */
+    margin-bottom: 3rem; /* Margen inferior específico */
+    color: #515151;
+    width: 35rem;
+}
+
+/* Enlace dentro del sistema */
+.Contenedor-Sistema-Texto a {
+    margin: 1rem; /* Margen alrededor del enlace */
+    font-size: 1.8rem; /* Tamaño de fuente del enlace */
+    color: white; /* Color de texto del enlace */
+    background-color: #4164E3; /* Color de fondo del enlace */
+    border: 2px solid transparent; /* Borde transparente */
+    padding: .9rem 2rem; /* Espaciado interno del enlace */
+    border-radius: 15px; /* Bordes redondeados */
+    transition: background-color 0.3s ease; /* Transición para el cambio de color de fondo */
+}
+
+/* Efecto hover para el enlace dentro del sistema */
+.Contenedor-Sistema-Texto a:hover {
+    background-color: transparent; /* Fondo transparente al pasar el ratón */
+    border: 2px solid black; /* Borde negro al pasar el ratón */
+    color: black; /* Color de texto negro al pasar el ratón */
+}
+
+/* Imagen dentro del sistema */
+.Contenedor-Sistema-Img img {
+    width: 100%; /* Ancho del 100% */
+    height: 100%;
+}
+
+
+.Contenedor-Experiencias {
+    display: flex;
+    flex-direction: column; /* Coloca los elementos en una columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+    margin-bottom: 10rem;
+    background-color: #F6F6F6;  
+    height: 80rem;
+}
+
+.Contenedor-Experiencias-Texto {
+    text-align: center;
+    margin: 0 auto; /* Ajusta el margen */
+    width: 80rem;
+    height: 20rem;
+    margin-top: 5rem;
+}
+
+.Contenedor-Experiencias-Texto p {
+    margin: 0 auto;
+    width: 80rem;
+    margin-top: 1.5rem;
+    color: #515151;
+}
+
+.Contenedor-Experiencias-Img-Principal {
+    width: 100%;
+    height: 80rem;
+    margin-top: 3rem; /* Añadir un margen superior para separar del texto */
+    padding: 0rem;
+
+}
+
+.Contenedor-Experiencias-Img{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+
+}
+
+.Contenedor-Experiencias-Img-1:hover, .Contenedor-Experiencias-Img-2:hover,.Contenedor-Experiencias-Img-3:hover,.Contenedor-Experiencias-Img-4:hover,.Contenedor-Experiencias-Img-5:hover {
+    transform: translateY(-50px);
+}
+
+.Contenedor-Experiencias-Img-1, .Contenedor-Experiencias-Img-2, .Contenedor-Experiencias-Img-4, .Contenedor-Experiencias-Img-5{
+    width: 25rem;
+    height: 30rem;
+    border-radius: 2rem;
+    margin: 1.5rem;
+    background-image: url(../Assets/Png/Elementos_Graficos/Foto_1_Experiencias.png);
+    background-position: center;
+    background-size: cover;
+    margin-top: 20rem;
+    transition: transform 0.5s ease; /* Transición suave */
+}
+
+.Contenedor-Experiencias-Img-2{
+    background-image: url(../Assets/Png/Elementos_Graficos/Foto_2_Experiencias.png);
+}
+.Contenedor-Experiencias-Img-4{
+    background-image: url(../Assets/Png/Elementos_Graficos/Foto_4_Experiencias.png);
+}
+
+.Contenedor-Experiencias-Img-5{
+    background-image: url(../Assets/Png/Elementos_Graficos/Foto_5_Experiencias.png);
+}
+
+.Contenedor-Experiencias-Img-3{
+    width: 30rem;
+    height: 40rem;
+    border-radius: 2rem;
+    background-image: url(../Assets/Png/Elementos_Graficos/Foto_3_Experiencias.png);
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s ease; /* Transición suave */
+}
+
+
+.Contenedor-Experiencias-Img-Texto {
+    position: absolute;
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 35rem;
+    margin-left: 12rem;
+    width: 20rem;
+}
+
+.Contenedor-Experiencias-Img-Texto p{
+    font-size: 1.5rem;
+}
+
+
+
+/*----------------------------------------------------------------------------------------------*/
+.Contenedor-Portabilidad{
+    margin-top: 13rem;
+    background-image: url(../Assets/Svg/Elementos_Graficos/Fondo_Principal_Index.svg);
+    display: flex;
+    height: 40rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.Contenedor-Portabilidad-Texto{
+    text-align: left;
+    margin-top: 8rem;
+    margin-left: 8rem;
+    width: 50rem;
+    height: 20rem;
+    color: white;
+    
+}
+
+.Contenedor-Portabilidad-Texto h1{
+    margin-bottom: 2rem;
+}
+
+.Contenedor-Portabilidad-Texto p{
+    margin-bottom: 1rem;
+    width: 45rem;
+}
+
+.Contenedor-Portabilidad-Img img{
+    width: 70rem;
+}
+
+.Contenedor-Portabilidad-Img{
+    transform: translateY(-30rem);
+}
+
+.Contenedor-Agradecimientos{
+    display: flex;
+    flex-direction: column; /* Coloca los elementos en una columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+    margin: 1rem;
+    height: 60rem;
+}
+
+.Contenedor-Agradecimientos-Texto {
+    text-align: center;
+    width: 80rem;
+    height: 20rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.Contenedor-Agradecimientos-Texto p{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: #515151;
+}
+
+.Contenedor-Agradecimientos-Img{
+    display: flex;
+    width: 100%;
+    height: 40rem;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+.Contenedor-Agradecimientos-Img-1 img{
+    width: 50rem;
+    height: 30rem;
+    margin-right: 1rem;
+    background-color: #F6F6F6;
+    border-radius: 3rem;
+    padding: 4rem 13rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.Contenedor-Agradecimientos-Img-2 img{
+    width: 50rem;
+    height: 30rem;
+    margin-left: 1rem;
+    background-color: #F6F6F6;
+    border-radius: 3rem;
+    padding: 4rem 6rem;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilos generales */
+footer {
+    background-color: #223947;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.social-links {
+    list-style-type: none;
+    padding: 0;
+}
+
+.social-links li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-links li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+
+.social-links li a:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+
+/*------------------------------------------------------------------------------------------*/
+/* Estilo básico del footer */
+.footer-section {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 60px 0;
+    position: relative;
+}
+
+/* Fondo del footer */
+.footer-pattern img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* Contenedor */
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/* Sección de CTA */
+.footer-cta {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.single-cta {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    padding: 10px;
+}
+
+.single-cta i {
+    font-size: 28px;
+    color: #ff5e14;
+    margin-right: 20px;
+}
+
+.cta-text h4 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.cta-text span {
+    color: #757575;
+}
+
+/* Widget */
+.footer-widget .row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.footer-widget .col-md-3 {
+    flex: 1;
+    margin-bottom: 40px;
+}
+
+.footer-widget-heading h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #fff;
+    position: relative;
+}
+
+.footer-widget-heading h3::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 2px;
+    background-color: #ff5e14;
+    left: 0;
+    bottom: -10px;
+}
+
+/* Enlaces */
+.footer-widget ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-widget ul li {
+    margin-bottom: 10px;
+}
+
+.footer-widget ul li a {
+    color: #878787;
+    text-transform: capitalize;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.footer-widget ul li a:hover {
+    color: #ff5e14;
+}
+
+/* Redes sociales */
+.footer-social-icon a {
+    color: #fff;
+    font-size: 22px;
+    margin-right: 15px;
+    padding: 12px;
+    display: inline-block;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.footer-social-icon .facebook-bg { background: #3B5998; }
+.footer-social-icon .twitter-bg { background: #55ACEE; }
+.footer-social-icon .google-bg { background: #DD4B39; }
+
+.footer-social-icon a:hover {
+    background: #ff5e14;
+}
+
+/* Formulario de suscripción */
+.subscribe-form {
+    display: flex;
+}
+
+.subscribe-form input {
+    width: 80%;
+    padding: 12px;
+    background-color: #333;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.subscribe-form button {
+    padding: 14px;
+    background-color: #ff5e14;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Derechos de autor */
+.copyright-area {
+    background: #202020;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.copyright-text p {
+    color: #878787;
+    font-size: 14px;
+    margin: 0;
+}
+
+.copyright-text p a {
+    color: #ff5e14;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .footer-cta {
+        flex-direction: column;
+    }
+    
+    .footer-widget .row {
+        flex-direction: column;
+    }
+
+    .footer-widget .col-md-3 {
+        margin-bottom: 30px;
+    }
+
+    .subscribe-form {
+        flex-direction: column;
+    }
+
+    .subscribe-form input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+/* Estilos generales */
+footer {
+    background-color: #223947;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.social-links {
+    list-style-type: none;
+    padding: 0;
+}
+
+.social-links li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-links li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+
+.social-links li a:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+
+/*------------------------------------------------------------------------------------------*/
+
+.site-footer {
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-content p {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+.footer-nav {
+    margin: 10px 0;
+}
+
+.footer-nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.footer-nav a:hover {
+    text-decoration: underline;
+}
+
+.social-icons {
+    margin: 15px 0;
+}
+
+.social-icons a {
+    margin: 0 10px;
+}
+
+.social-icons img {
+    width: 24px;
+}
+
+
+

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario | VIDOZ</title>
+    <link rel="stylesheet" href="./Css/Formulario.css">
+    <link rel="icon" href="../Assets/Svg/Logo/Vidoz_Logo.svg" type="image/x-icon">
+</head>
+<body>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img src="./Tarjeta De Bienvenida Hotel Moderno Negro y Blanco 3.png" alt="Descripción de la imagen" style="width: 100%; height: auto;">
+        </div>
+    </div>
+
+    <h1>Formulario Inicial</h1>
+    <p>Para ofrecerte la mejor experiencia posible, necesitamos algunos datos personales y financieros.</p>
+    <form id="registrationForm" class="Formulario">
+        <div class="inputlabel">
+            <label for="firstName">Nombres:</label>
+            <input type="text" id="firstName" name="firstName" required>
+        </div>
+
+        <div class="inputlabel">
+            <label for="lastName">Apellidos:</label>
+            <input type="text" id="lastName" name="lastName" required>
+        </div>
+
+        <div class="inputlabel">
+            <label for="gender">Género:</label>
+            <select id="gender" name="gender" required>
+                <option value="">Seleccione</option>
+                <option value="masculino">Masculino</option>
+                <option value="femenino">Femenino</option>
+                <option value="No binario">No binario</option>
+                <option value="otro">Otro</option>
+            </select>
+        </div>
+
+        <div class="inputlabel">
+            <label for="dob">Fecha de nacimiento:</label>
+            <input type="date" id="dob" name="dob" required>
+        </div>
+
+        <div class="inputlabel">
+            <label for="occupation">Ocupación:</label>
+            <select id="occupation" name="occupation" required>
+                <option value="">Seleccione</option>
+                <option value="Estudiante">Estudiante</option>
+                <option value="Independiente">Independiente</option>
+                <option value="Hogar / Ama de casa">Hogar / Ama de casa</option>
+                <option value="Sin empleo actualmente">Sin empleo actualmente</option>
+                <option value="Prefiero no decirlo">Sin empleo actualmente</option>
+            </select>
+        </div>
+
+        <div class="inputlabel">
+            <label for="nationality">Nacionalidad:</label>
+            <input type="text" id="nationality" name="nationality" required>
+        </div>
+
+        <div class="inputlabel">
+            <label for="howWeMet">¿Cómo nos conociste?</label>
+            <select name="howWeMet" id="howWeMet">
+                <option value="">Selecciona</option>
+                <option value="Evento o feria">Evento o feria</option>
+                <option value="Búsqueda en Internet">Búsqueda en Internet</option>
+                <option value="Recomendación de un amigo/familiar">Recomendación de un amigo/familiar</option>
+                <option value="Artículo o blog">Artículo o blog</option>
+                <option value="Publicidad">Publicidad</option>
+            </select>
+        </div>
+
+        <div class="inputlabel">
+            <label for="ingresosmensuales">Ingresos mensuales: (opcional)</label>
+            <input placeholder="$0" type="number" id="ingresosmensuales" name="ingresosmensuales">
+        </div>
+
+        <div class="inputlabel">
+            <label for="Presupuestomensual">Presupuesto mensual:</label>
+            <input placeholder="$0" type="number" id="Presupuestomensual" name="Presupuestomensual" required>
+        </div>
+
+        <div class="inputlabel">
+            <label for="CuentasBancarias">¿Cuentas Bancarias?</label>
+            <select name="CuentasBancarias" id="CuentasBancarias">
+                <option value="">Selecciona</option>
+                <option value="Si">Si</option>
+                <option value="No">No</option>
+            </select>
+        </div>
+
+    </form>
+
+    <div class="inputlabel">
+        <button type="submit" class="button-sumbit" id="submitBtn">Enviar</button>
+        <p>Todos los datos podrán ser cambiados en perfil.</p>
+    </div>
+
+
+    <script src="./Js/script.js"></script>
+</body>
+</html>

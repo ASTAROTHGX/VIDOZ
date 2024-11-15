@@ -1,0 +1,974 @@
+/* Media Queries para pantallas con ancho máximo de 1280px */
+@media (max-width: 1280px) {
+
+    header {
+        margin-bottom: 5rem; /* Margen inferior del encabezado ajustado */
+    }
+
+    .Contenido-Principal {
+        gap: 1rem; /* Espacio entre elementos ajustado */
+        height: 55rem; /* Altura del contenedor principal ajustada */
+    }
+
+    .Contenido-Principal-Div h1 {
+        font-size: 5rem; /* Tamaño de fuente ajustado */
+    }
+
+    .Contenido-Principal p {
+        font-size: 2rem; /* Tamaño de fuente ajustado */
+        margin-top: 2rem; /* Margen superior ajustado */
+    }
+
+    .Contenido-Principal-Img {
+        width: 65rem; /* Ancho de imagen ajustado */
+        height: 65rem; /* Altura de imagen ajustada */
+    }
+
+    /*----------------------------------------------------------------------------------*/
+
+    .Nuestras-Caracteristicas-Texto {
+        width: 50rem; /* Ancho del contenedor de características ajustado */
+        height: 17rem; /* Altura del contenedor de características ajustada */
+        margin-right: 2rem; /* Margen derecho ajustado */
+    }
+    
+    .Nuestras-Caracteristicas-Texto h1 {
+        font-size: 5rem; /* Tamaño de fuente para h1 ajustado */
+        margin-top: 5rem; /* Margen superior para h1 ajustado */
+        width: 35rem; /* Ancho de h1 ajustado */
+    }
+    
+    .Nuestras-Caracteristicas-Texto p {
+        font-size: 2rem; /* Tamaño de fuente para párrafos ajustado */
+        color: #101010; /* Color de texto ajustado */
+    }
+    
+    .Nuestras-Caracteristicas-Ul {
+        display: flex; /* Uso de Flexbox para disposición */
+        margin-top: 3rem; /* Margen superior ajustado */
+        font-size: 2rem; /* Tamaño de fuente ajustado */
+        width: 40rem; /* Ancho ajustado */
+    }
+    
+    li {
+        padding: 1rem; /* Relleno interno ajustado para elementos de lista */
+    }
+    
+    svg {
+        width: 3rem; /* Ancho de svg ajustado */
+        height: 3rem; /* Altura de svg ajustada */
+    }
+    
+    .Nuestras-Caracteristicas-Circulo {
+        margin-top: 10rem; /* Margen superior ajustado para círculos de características */
+        width: 45rem; /* Ancho de círculo de características ajustado */
+    }
+    
+    .Nuestras-Caracteristicas{
+        height: 60rem;
+    }
+
+        /*----------------------------------------------------------------------------------*/
+
+    .Contenedor-Sistema{
+        height: 45rem;
+    }
+
+    .Contenedor-Sistema-Img{
+        width: 80%;
+        height: 100%;
+    }
+
+    .Contenedor-Sistema-Texto h1{
+        font-size: 4rem;
+    }
+
+    .Contenedor-Sistema-Texto p{
+        font-size: 2rem;
+    }
+
+    .Contenedor-Experiencias-Texto{
+        margin-top: 10rem;
+    }
+
+/*----------------------------------------------------------------------------------*/
+
+    .Funcionalidad-Img img {
+        width: 50rem;
+        height: 50rem;
+        margin: 2rem 0rem 2rem 7rem;
+    }
+    
+    .Funcionalidad-Texto h1 {
+        margin-bottom: 1rem; /* Margen inferior para título de funcionalidad ajustado */
+        font-size: 5rem; /* Tamaño de fuente para título de funcionalidad ajustado */
+    }
+
+    .Funcionalidad-Texto {
+        padding: 1rem; /* Espaciado interno ajustado */
+        justify-content: center; /* Centrar contenido horizontalmente */
+    }
+    
+    
+    .Contenedor-Funcionalidad {
+        position: absolute; /* Posicionamiento absoluto */
+        margin-left: 65rem; /* Margen izquierdo ajustado */
+        margin-top: 23rem; /* Margen superior ajustado */
+    }
+    
+    .Contenedor-Funcionalidad-Funcionalidades-2 {
+        margin-left: 8rem; /* Margen izquierdo ajustado */
+        width: 300px; /* Ancho ajustado */
+    }
+
+    .Funcionalidad-Texto p {
+        font-size: 2rem; /* Tamaño de fuente para párrafos ajustado */
+    }
+
+    .Funcionalidad {
+        justify-content: center;
+        height: 65rem;
+        gap: 13rem;
+        padding-top: 5rem;
+    
+    }
+
+        /*----------------------------------------------------------------------------------*/
+
+
+    .Contenedor-Experiencias-Texto{
+        margin-top: 5rem;
+    }
+
+    
+    .Contenedor-Experiencias-Img-1, .Contenedor-Experiencias-Img-2, .Contenedor-Experiencias-Img-4, .Contenedor-Experiencias-Img-5{
+        width: 25rem;
+        height: 30rem;
+    }
+    
+    .Contenedor-Experiencias-Img-3{
+        width: 30rem;
+        height: 40rem;
+    }
+
+}
+@media (max-width: 1130px) {
+
+    .Contenido-Principal-Div h1 {
+        font-size: 4rem; /* Tamaño de fuente ajustado para h1 */
+    }
+    
+    .Contenido-Principal-Div p {
+        font-size: 1.5rem; /* Tamaño de fuente ajustado para párrafos */
+        margin-top: 2rem; /* Margen superior ajustado */
+    }
+    
+    .Contenido-Principal-Img {
+        width: 55rem; /* Ancho de imagen ajustado */
+        height: 55rem; /* Altura de imagen ajustada */
+    }
+    
+    .Contenido-Principal {
+        height: 45rem; /* Altura del contenedor principal ajustada */
+    }
+    
+    .Contenido-Principal-Div {
+        gap: 1rem; /* Espacio entre elementos ajustado */
+        margin-top: 2rem; /* Margen superior ajustado */
+    }
+    
+    header {
+        margin-bottom: 5rem; /* Margen inferior del encabezado ajustado */
+    }
+
+    /*----------------------------------------------------------------------------------*/
+
+
+    .Nuestras-Caracteristicas {
+        height: 60rem; /* Altura de sección de características ajustada */
+    }
+
+    .Nuestras-Caracteristicas-Texto {
+        height: auto; /* Altura automática para texto de características */
+        justify-content: center; /* Centrar contenido horizontalmente */
+        margin: 0px 0px 0px 8rem; /* Margen ajustado */
+        height: 20rem; /* Altura de texto de características ajustada */
+    }
+
+    .Contenedor-Funcionalidad {
+        position: absolute; /* Posicionamiento absoluto */
+        margin-left: 50rem; /* Margen izquierdo ajustado */
+        margin-top: 20rem; /* Margen superior ajustado */
+    }
+    
+
+    .Contenedor-Funcionalidad-Texto {
+        width: 40rem; /* Ancho de texto de funcionalidad ajustado */
+        justify-content: center; /* Centrar contenido horizontalmente */
+    }
+
+    .Funcionalidad {
+        height: 60rem; /* Altura de sección de funcionalidad ajustada */
+        gap: 1rem; /* Espacio entre elementos ajustado */    }
+
+    .Funcionalidad-Img img {
+        width: 40rem; /* Ancho de imagen de funcionalidad ajustado */
+        margin-left: 0;
+    }
+
+        /*----------------------------------------------------------------------------------*/
+
+    
+    .Contenedor-Sistema-Img{
+        width: 70%;
+        height: 80%;
+    }
+
+    .Contenedor-Sistema-Texto h1{
+        font-size: 3.5rem;
+    }
+
+    .Contenedor-Sistema-Texto p{
+        font-size: 1.8rem;
+    }
+
+    /*--------------------------------------------------------*/
+    
+    .Contenedor-Experiencias{
+        height: 55rem;
+    }
+
+    .Contenedor-Experiencias-Img-1, .Contenedor-Experiencias-Img-2, .Contenedor-Experiencias-Img-4, .Contenedor-Experiencias-Img-5{
+        width: 20rem;
+        height: 25rem;
+        margin: 1rem;
+        margin-top: 16rem;
+    }
+    
+    .Contenedor-Experiencias-Img-3{
+        width: 25rem;
+        height: 35rem;
+    }
+
+    .Contenedor-Experiencias-Texto{
+        margin-top: 0rem;
+    }
+
+    .Contenedor-Experiencias-Texto h1{
+        font-size: 4rem;
+    }
+
+    .Contenedor-Experiencias-Texto p{
+        width: 55rem;
+        margin: 0 auto;
+        text-align: center;
+        
+    }
+
+    .Contenedor-Experiencias-Texto{
+        margin-top: 5rem;
+    }
+
+    .Contenedor-Experiencias {
+        height: 65rem;
+    }
+
+        /*----------------------------------------------------------------------------------*/
+
+
+    .Contenedor-Portabilidad-Img img{
+        width: 50rem;
+    }
+    
+    .Contenedor-Portabilidad-Img{
+        transform: translateY(-10rem);
+    }
+
+        /*----------------------------------------------------------------------------------*/
+
+    .Contenedor-Agradecimientos{
+        display: flex;
+        flex-direction: column; /* Coloca los elementos en una columna */
+        align-items: center; /* Centra los elementos horizontalmente */
+        height: 50rem;
+        margin: 1rem;
+        height: 60rem;
+    }
+    
+    .Contenedor-Agradecimientos-Texto {
+        text-align: center;
+        width: 80rem;
+        height: 20rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    
+    .Contenedor-Agradecimientos-Texto p{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        color: #515151;
+    }
+    
+    .Contenedor-Agradecimientos-Img{
+        display: flex;
+        width: 100%;
+        height: 40rem;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 3rem;
+    }
+    
+    .Contenedor-Agradecimientos-Img-1 img{
+        width: 45rem;
+        height: 28rem;
+        margin-right: 1rem;
+        background-color: #F6F6F6;
+        border-radius: 3rem;
+        padding: 4rem 13rem;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .Contenedor-Agradecimientos-Img-2 img{
+        width: 45rem;
+        height: 28rem;
+        margin-left: 1rem;
+        background-color: #F6F6F6;
+        border-radius: 3rem;
+        padding: 4rem 6rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+
+@media (max-width: 940px) {
+
+    .Barra-Navegacion-Lista-Movil svg{
+        display: flex;
+    }
+
+    .Logo img{
+        left: 3rem;
+    }
+
+    .Contenido-Principal-Div {
+        display: grid; /* Cambio a grid para la disposición */
+        color: white; /* Color de texto blanco */
+        margin: 0 auto; /* Margen automático para centrar */
+        justify-content: center; /* Centrar contenido horizontalmente */
+        gap: 3rem; /* Espacio entre elementos */
+        text-align: center; /* Alinear texto al centro */
+    }
+
+    .Contenedor-Funcionalidad-Funcionalidades-2{
+        margin-left: 2rem;
+    }
+
+    .Contenido-Principal {
+        height: 75rem; /* Altura ajustada */
+    }
+
+    .Barra-Navegacion-Lista-Registro, .Barra-Navegacion-Lista-IniciarSesion {
+        display: none; /* Ocultar elementos */
+    }
+
+    .Barra-Navegacion-Lista-Movil img{
+        display: block;
+        right: 0;
+        top: 0;
+        margin: 3rem 3rem;
+    }
+
+    /*----------------------------------------------------------------------------------*/
+
+    .Nuestras-Caracteristicas-Ul {
+        display: none; /* Ocultar elemento */
+    }
+
+    .Nuestras-Caracteristicas {
+        display: grid; /* Cambio a grid para la disposición */
+        text-align: center; /* Alinear texto al centro */
+        height: 75rem; /* Altura ajustada */
+    }
+
+    .Nuestras-Caracteristicas-Texto {
+        margin: 0 auto; /* Margen automático para centrar */
+        margin-bottom: 0; /* Eliminar margen inferior */
+    }
+
+    .Nuestras-Caracteristicas-Texto h1 {
+        margin: 0 auto; /* Margen automático para centrar */
+        padding-top: 3rem; /* Relleno superior ajustado */
+    }
+
+    .Nuestras-Caracteristicas-Circulo {
+        justify-content: center; /* Centrar contenido horizontalmente */
+        margin: 0 auto; /* Margen automático para centrar */
+    }
+
+    /*------------------------------------------------------------------------------------------*/
+
+    .Funcionalidad {
+        text-align: center; /* Alinear texto al centro */
+        display: grid; /* Cambio a grid para la disposición */
+        height: 65rem; /* Altura ajustada */
+        padding-top: 0rem;
+    }
+
+    .Funcionalidad-Img img  {
+        display: none; /* Ocultar imagen */
+    }
+
+    .Funcionalidad-Texto {
+        margin: 0 auto; /* Margen automático para centrar */
+        height: 15rem; /* Altura ajustada */
+    }
+
+    .Funcionalidad-Img{
+        margin: 0;
+        padding: 0;
+    }
+
+    .Contenedor-Funcionalidad {
+        display: grid; /* Cambio a grid para la disposición */
+        position: relative; /* Posicionamiento relativo */
+        margin: 0 auto; /* Margen automático para centrar */
+        width: 10rem; /* Ancho ajustado */
+        height: 30rem; /* Altura ajustada */
+        justify-content: center; /* Centrar contenido horizontalmente */
+    }
+
+    .Contenedor-Funcionalidad-Funcionalidades, .Contenedor-Funcionalidad-Funcionalidades-2 {
+        width: 270px; /* Ancho ajustado */
+        text-align: center; /* Alinear texto al centro */
+    }
+
+    .Contenedor-Funcionalidad-Icono-2 {
+        margin-right: 1rem; /* Margen derecho ajustado */
+    }
+    /*------------------------------------------------------------------------------------------*/
+
+    .Contenedor-Sistema{
+        display: grid;
+        height: 65rem;
+        padding: 3rem;
+        justify-content: center;
+    }
+
+    .Contenedor-Sistema-Texto{
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .Contenedor-Sistema-Img{
+        width: 100%;
+        height: 35rem;
+        margin-top: 2rem;
+        
+    }
+
+    .Contenedor-Sistema-Texto p{
+        margin: 0 auto;
+        width: 40rem;
+    }
+
+    .Contenedor-Sistema-Texto a{
+        display: none;
+    }
+
+        /*----------------------------------------------------------------------------------*/
+
+
+    .Contenedor-Experiencias{
+        height: 55rem;
+        padding: 3rem;
+    }
+
+    .Contenedor-Experiencias-Img-1, .Contenedor-Experiencias-Img-2, .Contenedor-Experiencias-Img-4, .Contenedor-Experiencias-Img-5{
+        width: 25rem;
+        height: 35rem;
+        margin: 1rem;
+        margin-top: 16rem;
+    }
+    
+    .Contenedor-Experiencias-Img-3{
+        width: 30rem;
+        height: 40rem;
+    }
+
+        /*----------------------------------------------------------------------------------*/
+
+
+    .Contenedor-Sistema-Texto h1{
+        font-size: 4rem;
+    }
+
+    .Contenedor-Sistema-Texto p{
+        font-size: 1.8rem;
+    }
+
+    .Contenedor-Experiencias-Texto{
+        width: 60rem;
+    }
+
+    .Contenedor-Experiencias-Texto p{
+        width: 60rem;
+        margin-top: 1rem;
+    }
+    .Contenedor-Experiencias-Img-5{
+        display: none;
+    }
+
+    .Contenedor-Experiencias-Img-1{
+        display: none;
+    }
+
+    .Contenedor-Experiencias-Texto{
+        margin-top: 14rem;
+    }
+
+    .Contenedor-Experiencias{
+        padding: 0;
+    }
+
+    .Contenedor-Experiencias-Texto{
+        margin-top: 20rem;
+    }   
+
+        /*----------------------------------------------------------------------------------*/
+
+
+    .Contenedor-Portabilidad-Img{
+        display: none;
+    }
+
+    .Contenedor-Portabilidad-Texto{
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .Contenedor-Portabilidad{
+        margin-top: 20rem;
+        align-items: center;
+        justify-content: center;
+        height: 30rem;
+        
+    }
+
+    .Contenedor-Experiencias{
+        height: 50rem;
+    }
+
+    .Contenedor-Portabilidad-Texto p{
+        width: 100%;
+    }
+
+    .Contenedor-Portabilidad-Texto h1{
+        margin-top: 5rem;
+        font-size: 4rem;
+    }
+
+    .Contenedor-Portabilidad-Texto {
+        height: 30rem;
+        margin: 0 auto;
+    }
+
+        /*----------------------------------------------------------------------------------*/
+
+
+        .Contenedor-Agradecimientos{
+        display: flex;
+        flex-direction: column; /* Coloca los elementos en una columna */
+        align-items: center; /* Centra los elementos horizontalmente */
+        height: 50rem;
+        margin: 1rem;
+        height: 60rem;
+    }
+    
+    .Contenedor-Agradecimientos-Texto {
+        text-align: center;
+        width: 80rem;
+        height: 20rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    
+    .Contenedor-Agradecimientos-Texto p{
+        width: 60rem;
+        margin: 0 auto;
+        margin-top: 1rem;
+        font-size: 1.8rem;
+    }
+
+    .Contenedor-Agradecimientos-Texto h1{
+        font-size: 4rem;
+    }
+    
+    .Contenedor-Agradecimientos-Img{
+        display: flex;
+        width: 100%;
+        height: 40rem;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 3rem;
+
+    }
+    
+    .Contenedor-Agradecimientos-Img-1 img{
+        width: 45rem;
+        height: 28rem;
+        margin: 1rem;
+    }
+    
+    .Contenedor-Agradecimientos-Img-2 img{
+        width: 45rem;
+        height: 28rem;
+        margin: 1rem;
+    }
+
+    .Contenedor-Agradecimientos{
+        height: 80rem;
+        height: 80rem;
+    }
+    
+    
+    .Contenedor-Agradecimientos-Img{
+        display: grid;
+        height: 60rem;
+    }
+    
+}
+
+@media (max-width: 600px) {
+    .Barra-Navegacion-Lista-Registro, .Barra-Navegacion-Lista-IniciarSesion {
+        display: none; /* Ocultar elementos */
+    }
+    .Logo img {
+        top: 2rem;
+        left: 4rem;
+        margin: 1rem 0rem;
+        width: 70px; /* Ancho de imagen de logo ajustado */
+    }
+
+    .Contenido-principal {
+        height: 50rem; /* Altura ajustada */
+    }
+
+    .Contenido-Principal-Img {
+        width: 50rem; /* Ancho de imagen de contenido principal ajustado */
+    }
+
+    html, body {
+        overflow-x: hidden; /* Ocultar desplazamiento horizontal */
+    }
+
+        /*----------------------------------------------------------------------------------*/
+
+
+    .Nuestras-Caracteristicas-Circulo {
+        width: 37.5rem; /* Ancho de círculo de características ajustado */
+    }
+
+        /*----------------------------------------------------------------------------------*/
+
+
+    .Contenedor-Funcionalidad-Funcionalidades-2{
+        margin: 20px; /* Márgenes ajustados */
+        text-align: center; /* Alinear texto al centro */
+        width: 27rem; /* Ancho ajustado */
+    }
+
+
+    .Contenedor-Funcionalidad-Funcionalidades {
+        width: 27rem; /* Ancho ajustado */
+        height: 7rem; /* Altura ajustada */
+        background-color: white; /* Color de fondo */
+        display: flex; /* Uso de Flexbox para la disposición */
+        align-items: center; /* Alinear elementos verticalmente */
+        border-radius: 5px; /* Bordes redondeados */
+        margin: 20px; /* Márgenes ajustados */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra del contenedor */
+        text-align: center; /* Alinear texto al centro */
+    }
+
+    .Funcionalidad{
+        height: 60rem;
+        margin: 0;
+        padding: 0;
+    }
+
+    .Funcionalidad-Texto{
+        margin: 0;
+    }
+
+    .Contenedor-Funcionalidad{
+        margin-bottom: 5rem;
+    }
+
+        /*----------------------------------------------------------------------------------*/
+
+
+    .Contenedor-Sistema-Texto h1{
+        font-size: 4rem;
+    }
+
+    .Contenedor-Sistema-Texto p{
+        font-size: 1.8rem;
+    }
+
+        /*----------------------------------------------------------------------------------*/
+
+
+    .Contenedor-Experiencias-Texto{
+        width: 45rem;
+    }
+
+    .Contenedor-Experiencias-Texto p{
+        width: 45rem;
+        margin-top: 1rem;
+    }
+
+    .Contenedor-Experiencias-Img-1, .Contenedor-Experiencias-Img-2, .Contenedor-Experiencias-Img-4, .Contenedor-Experiencias-Img-5{
+        width: 30rem;
+        height: 25rem;
+        margin: 0.5rem;
+        margin-top: 16rem;
+    }
+    
+    .Contenedor-Experiencias-Img-3{
+        width: 35rem;
+        height: 35rem;
+    }
+
+    .Contenedor-Experiencias{
+        padding: 0;
+    }
+
+        /*----------------------------------------------------------------------------------*/
+
+
+    .Contenedor-Sistema-Img{
+        padding: 0;
+        margin: 0;
+        height: 90%;
+    }
+
+        /*----------------------------------------------------------------------------------*/
+
+
+    .Contenedor-Agradecimientos-Texto p{
+        width: 45rem;
+        margin: 0 auto;
+        margin-top: 1rem;
+        font-size: 1.6rem;
+    }
+
+        /*----------------------------------------------------------------------------------*/
+
+    
+}
+
+
+@media (max-width: 470px) {
+    html, body {
+        overflow-x: hidden; /* Ocultar desplazamiento horizontal */
+    } 
+    
+    .Logo img {
+        top: 1rem;
+        left: 2rem;
+        margin: 1rem 0rem;
+        width: 60px; /* Ancho de imagen de logo ajustado */
+    }
+
+    .Contenido-Principal-Img {
+        width: 38rem; /* Ancho */
+        height: 38rem; /* Altura */
+    }
+
+    .Contenedor-Sistema-Texto{
+        height: 230px;
+    }
+
+    .Contenedor-Sistema-Texto p{
+        padding: 0rem 3rem;
+    }
+
+    .Contenido-Principal {
+        width: 100%; /* Ancho del 100% */
+        height: 60rem; /* Altura de 65rem */
+    }
+
+        /*----------------------------------------------------------------------------------*/
+
+
+    .Nuestras-Caracteristicas-Texto h1{
+        font-size: 4rem;
+    }
+
+    .Nuestras-Caracteristicas-Texto p{
+        font-size: 1.8rem;
+    }
+
+    .Nuestras-Caracteristicas-Circulo{
+        width: 30rem;
+    }
+
+    .Nuestras-Caracteristicas{
+        height: 60rem;
+    }
+    
+        /*----------------------------------------------------------------------------------*/
+
+
+    .Funcionalidad-Texto h1{
+        font-size: 4rem;
+    }
+
+
+    .Funcionalidad-Texto p{
+        font-size: 1.8rem;
+    }
+
+        /*----------------------------------------------------------------------------------*/
+
+    .Contenedor-Sistema{
+        height: 55rem;
+    }
+
+    .Contenedor-Sistema-Texto h1{
+        font-size: 4rem;
+    }
+
+    .Contenedor-Sistema-Texto p{
+        font-size: 1.8rem;
+    }
+
+        /*----------------------------------------------------------------------------------*/
+
+    .Contenedor-Experiencias-Texto{
+        width: 40rem;
+        margin-top: 17rem;
+    }
+
+    .Contenedor-Experiencias-Texto p{
+        width: 40rem;
+        margin-top: 1rem;
+    }
+
+
+    .Contenedor-Experiencias-Texto h1{
+        font-size: 4rem;
+    }
+
+    .Contenedor-Experiencias-Texto p{
+        font-size: 1.8rem;
+    }
+
+    .Contenedor-Experiencias-Img-1, .Contenedor-Experiencias-Img-2, .Contenedor-Experiencias-Img-4, .Contenedor-Experiencias-Img-5{
+        width: 30rem;
+        height: 20rem;
+        margin: 1rem;
+        margin-top: 10rem;
+    }
+    
+    .Contenedor-Experiencias-Img-3{
+        margin-top: .5rem;
+        width: 35rem;
+        height: 25rem;
+    }
+
+    .Contenedor-Experiencias{
+        padding: 1rem;
+    }
+
+    .Contenedor-Experiencias-Texto h1{
+        padding-top: 2rem;
+    }
+
+    .Contenedor-Experiencias-Texto p{
+        width: 32rem;
+        font-size: 1.3rem;
+        margin: 1rem 1rem 1rem 2.3rem;
+    }
+
+
+    .Contenedor-Experiencias {
+        display: flex;
+        flex-direction: column; /* Coloca los elementos en una columna */
+        align-items: center; /* Centra los elementos horizontalmente */
+        margin-bottom: 0rem;
+        background-color: #F6F6F6;  
+        height: 35rem;
+    }
+
+        /*----------------------------------------------------------------------------------*/
+
+
+    .Contenedor-Portabilidad-Texto p{
+        font-size: 1.8rem;
+        width: 35rem;
+        margin: 0 auto;
+        margin-top: 2rem;
+
+    }
+
+    .Contenedor-Portabilidad-Texto h1{
+        font-size: 4rem;
+        width: 40rem;
+        margin: 0 auto;
+        margin-top: 2rem;
+    }
+
+        /*----------------------------------------------------------------------------------*/
+
+
+    .Contenedor-Agradecimientos-Texto{
+        margin-bottom: 0;
+        height: 13rem;
+        margin-top: 0;
+    }
+
+    .Contenedor-Agradecimientos-Img{
+        height: 55rem;
+    }
+
+    .Contenedor-Agradecimientos-Texto h1{
+        width: 45rem;
+        margin: 0 auto;
+        margin-top: 1rem;
+        font-size: 3rem;
+    }
+
+    .Contenedor-Agradecimientos-Texto p{
+        width: 38rem;
+        margin: 0 auto;
+        margin-top: 1rem;
+        font-size: 1.5rem;
+    }
+
+    .Contenedor-Agradecimientos-Img-1 img{
+        width: 38rem;
+        height: 21rem;
+    }
+    
+    .Contenedor-Agradecimientos-Img-2 img{
+        width: 38rem;
+        height: 23rem;
+    }
+
+    .Contenedor-Agradecimientos{
+        margin: 0;
+        height: 75rem;
+    }
+    
+}
+
+
+

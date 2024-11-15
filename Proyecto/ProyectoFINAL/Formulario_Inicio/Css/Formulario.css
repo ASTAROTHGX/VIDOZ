@@ -1,0 +1,206 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #11121a;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: #5E63FF;
+    text-align: center;
+    margin: 40px 0 10px 0;
+    font-size: 40px;
+}
+
+p {
+    color: white;
+    text-align: center;
+    font-size: 18px;
+}
+
+/* Estilos del modal */
+.modal {
+    visibility: hidden; /* Ocultar por defecto */
+    opacity: 0; /* Inicialmente invisible */
+    position: fixed;
+    z-index: 1; /* Sitúa el modal en la parte superior */
+    left: 0;
+    top: 0;
+    width: 100%; /* Ancho completo */
+    height: 100%; /* Alto completo */
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo negro con opacidad */
+    transition: visibility 0s 0.3s, opacity 0.3s ease; /* Transición de visibilidad y opacidad */
+    transform: translateY(-20px); /* Mover hacia arriba por defecto */
+}
+
+/* Añadido para mostrar el modal */
+.modal.show {
+    visibility: visible; /* Hacer visible el modal */
+    opacity: 1; /* Hacerlo visible */
+    transition: visibility 0s, opacity 0.3s ease; /* Transición para mostrar */
+    transform: translateY(0); /* Regresar a la posición original */
+}
+
+.modal-content {
+    background-color: #484FD9;
+    margin: 5% auto; /* Centrando el modal */
+    border: 2px solid #484FD9;
+    border-radius: 30px;
+    width: 55%; /* Ancho del contenido */
+    max-width: 90%; /* Ajuste de ancho en pantallas pequeñas */
+    text-align: center; /* Centrar texto */
+}
+
+.modal-content img {
+    border-radius: 30px;
+}
+
+.close {
+    color: white;
+    float: right; /* Alinear a la derecha */
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    margin: 0 20px;
+}
+
+.close:hover,
+.close:focus {
+    color: black; /* Cambia el color al pasar por encima */
+    text-decoration: none; /* Sin subrayado */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+}
+
+/* Estilos del formulario */
+.Formulario {
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 90%; /* Ancho adaptable para pantallas pequeñas */
+    max-width: 1200px;
+    height: auto;
+    border-radius: 30px;
+    border: 1px solid #5E63FF;
+    padding: 20px; /* Agregado padding para mejor espacio interno */
+    display: grid; /* Usar grid para organizar los inputs */
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas */
+    gap: 20px; /* Espaciado entre los campos */
+}
+
+.inputlabel {
+    display: flex; /* Cambiado a flex para centrar elementos */
+    flex-direction: column; /* Alinear verticalmente */
+    color: #5E63FF;
+    text-align: center;
+
+}
+
+.inputlabel a{
+    margin: 0 auto;
+}
+
+.inputlabel input,
+.inputlabel select,
+.inputlabel textarea {
+    height: 40px; /* Ajusta el tamaño para inputs y select */
+    border-radius: 10px;
+    margin: 5px 0; /* Margen vertical para separar elementos */
+    border: 1px solid #5E63FF;
+    text-align: center; /* Centrar texto dentro de los inputs */
+}
+
+button {
+    background-color: #5E63FF;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s; /* Transición suave */
+}
+
+button:hover {
+    background-color: #484FD9;
+}
+
+.inputlabel button {
+    background-color: transparent;
+    border: 1px solid #5E63FF;
+    width: 140px;
+    margin: 0 auto;
+    font-size: 18px;
+    border-radius: 10px;
+    margin-top: 25px;
+}
+
+.inputlabel p {
+    color: #5E63FF;
+    margin: 15px;
+}
+
+.inputlabel button:hover{
+    background-color: #484FD9;
+}
+
+/* Media queries para pantallas más pequeñas */
+@media (max-width: 1024px) {
+    .Formulario {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+        width: 80%; /* Ajuste del ancho */
+    }
+
+    h1 {
+        font-size: 32px; /* Reducción de tamaño de fuente */
+    }
+
+    p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .Formulario {
+        grid-template-columns: 1fr; /* 1 columna en pantallas pequeñas */
+        width: 85%;
+    }
+
+    .modal-content {
+        width: 85%;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    p {
+        padding: 0px 10px;
+        font-size: 14px;
+    }
+
+    .close {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 24px;
+        margin: 20px 0px 5px 0px;
+    }
+
+    .modal-content {
+        width: 80%;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    .Formulario{
+        width: 80%;
+    }
+}

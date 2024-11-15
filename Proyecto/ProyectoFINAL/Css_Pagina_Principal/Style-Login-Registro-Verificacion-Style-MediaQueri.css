@@ -1,0 +1,28 @@
+    @media (max-width: 940px) {
+
+        .Contenedor-Caracteristicas-Registro{
+            display: none
+        }
+
+        section{
+            justify-content: center;
+        }
+
+        .Contenedor-Registro{
+            margin: 0;
+            width: 25rem;
+        }
+
+        label{
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+
+        label p {
+            margin-left: 5rem;
+
+    }
+    }

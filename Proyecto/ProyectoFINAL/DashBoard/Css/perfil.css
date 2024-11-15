@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+    --base-clr: #11121a;
+    --line-clr: #42434a;
+    --hover-clr: #222533;
+    --text-clr: #e6e6ef;
+    --accent-clr: #5e63ff;
+    --secondary-text-clr: #b0b3c1;
+  }
+  
+
+*{
+  margin: 0;
+  padding: 0;
+
+}
+
+*::-webkit-scrollbar {
+  display: none; /* Oculta la barra de desplazamiento */
+}
+html{
+  font-family: Poppins, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5rem;
+}
+
+
+#registrationForm{
+    padding: 20px;
+    border: 1px solid var(--accent-clr);
+    border-radius: 20px;
+    width: 600px;
+    height: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+
+.form-group input{
+    width: 200px;
+}
+
+.form-group{
+    width: 200px;
+    display: grid;
+    justify-content: center;
+}
+
+#gender{
+    width: 200px;
+}
+
+#howWeMet{
+    width: 200px;
+}
+
+#occupation{
+    width: 220px;
+}
+
+.Guardar{
+    margin: 20px;
+}
+
+.form-container{
+    margin: 0 auto;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center;  /* Centra horizontalmente */
+    align-items: center;      /* Centra verticalmente */
+  }
+
+  @media(max-width: 800px){
+    #registrationForm{
+      padding: 20px;
+      border: 1px solid var(--accent-clr);
+      border-radius: 20px;
+      width: 350px;
+      height: 830px;
+      display: flex;
+      flex-wrap: nowrap;
+      text-align: center;
+      align-items: center;
+      margin: 0 auto;
+      margin-top: 0px;
+  }
+
+
+  }
